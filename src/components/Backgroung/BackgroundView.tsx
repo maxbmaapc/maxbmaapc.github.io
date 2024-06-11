@@ -10,7 +10,7 @@ const BackgroundView = () => {
         </p>
         <p>
           Driven by a passion for software development, I relocated to London
-          and enrolled at <a href="https://newham.ac.uk/"> Newham College </a>.
+          and enrolled at <a href="https://newham.ac.uk/"> Newham College</a>.
           Graduating in 2023, I seized the opportunity to broaden my skills by
           joining <a href="https://codeyourfuture.io/"> CodeYourFuture </a> as a
           Full-Stack Software Developer.

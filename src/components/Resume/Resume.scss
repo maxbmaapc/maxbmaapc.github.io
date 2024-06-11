@@ -1,0 +1,23 @@
+.resume {
+  font-size: 1.5rem;
+  padding: 6rem 0;
+
+  a {
+    @include flex-center;
+    gap: 1rem;
+
+    &:hover .resume__arrow_icon {
+      animation: bounce 1s infinite;
+    }
+  }
+
+  @keyframes bounce {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+}

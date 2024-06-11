@@ -8,13 +8,15 @@ import { fadeIn } from "../../utils/fadeIn";
 interface MotionProps {
   children: ReactNode;
   className: string;
-  type: "div" | "header" | "section";
+  type?: "div" | "header" | "section";
+  viewport?: number;
 }
 
 const Motion: React.FC<MotionProps> = ({
   children,
   className,
   type = "div",
+  viewport = 0.3,
 }) => {
   const isMobile = useMediaQuery({ maxWidth: 480 });
   const MotionTag = motion[type];
@@ -25,7 +27,7 @@ const Motion: React.FC<MotionProps> = ({
       variants={fadeIn(isMobile ? "up" : "right", 0.5)}
       initial="hidden"
       whileInView={"show"}
-      viewport={{ once: false, amount: 0.3 }}
+      viewport={{ once: false, amount: viewport }}
     >
       {children}
     </MotionTag>

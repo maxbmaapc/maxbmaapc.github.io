@@ -1,13 +1,12 @@
 import { SimpleGrid, Badge, Tag } from "@chakra-ui/react";
 import { useMediaQuery } from "react-responsive";
+import { FaStar } from "react-icons/fa";
 
 const SkillsView = () => {
   const isMobile = useMediaQuery({ maxWidth: 480 });
-  const tagSize = "lg";
   const badgeFontSize = "10px";
   const badgeMarginLeft = 1;
-  const colorScheme = "gray";
-  const tagVariant = undefined;
+
   return (
     <>
       <h1 className="section__title">Skills</h1>
@@ -22,8 +21,8 @@ const SkillsView = () => {
             <li>JavaScript</li>
             <li>
               TypeScript{" "}
-              <Badge colorScheme="orange" fontSize="0.7rem">
-                Fav
+              <Badge colorScheme="orange" fontSize="0.9rem">
+                <FaStar />
               </Badge>
             </li>
             <li>HTML</li>

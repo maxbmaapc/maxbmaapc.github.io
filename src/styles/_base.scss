@@ -1,10 +1,52 @@
 $color-coal: #242424;
+$color-black: #36363c;
 $color-paper: #fffffa;
+$color-yellow: #ffdc00;
+$color-purple: #7d0ce8;
 
-@mixin flexLayout {
+$mobile-width: 480px;
+$tablet-width: 820px;
+
+$fs-h-desktop: 2.5rem;
+$fs-h-mobile: 1.5rem;
+
+@mixin flex-center {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin flex-left {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+@mixin transition {
+  transition: all 0.2s ease-in-out;
+}
+
+@mixin tablet {
+  @media screen and (max-width: #{$tablet-width}) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media screen and (max-width: #{$mobile-width}) {
+    @content;
+  }
+}
+
+@mixin light {
+  @media (prefers-color-scheme: light) {
+    @content;
+  }
 }
 
 :root {
@@ -22,19 +64,25 @@ $color-paper: #fffffa;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+::selection {
+  background: $color-yellow;
+  color: $color-coal;
 }
 
 body {
   margin: 0;
-  display: flex;
+  // display: flex;
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+}
+
+#root {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 4rem;
+  text-align: center;
+  min-width: 320px;
 }
 
 a {
@@ -49,6 +97,11 @@ a:hover {
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
+}
+
+h2,
+h3 {
+  font-size: $fs-h-desktop;
 }
 
 button {
@@ -75,10 +128,22 @@ button:focus-visible {
     color: $color-coal;
     background-color: $color-paper;
   }
+
   a:hover {
     color: #747bff;
   }
   button {
     background-color: #f9f9f9;
+  }
+}
+
+@include mobile {
+  #root {
+    padding: 0 2rem;
+  }
+
+  h2,
+  h3 {
+    font-size: $fs-h-mobile;
   }
 }

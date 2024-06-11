@@ -1,0 +1,146 @@
+.header {
+  @include flex-left;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 95vh;
+
+  @include mobile {
+    height: 80vh;
+  }
+
+  &__hello {
+    font-weight: 300;
+
+    @include mobile {
+      font-size: 2rem;
+    }
+  }
+
+  &__emoji {
+    display: inline-block;
+    margin: 0 10px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+
+    img {
+      width: 100%;
+    }
+
+    &.wave:hover {
+      animation: wave 1s infinite;
+    }
+
+    &.pointer:hover {
+      animation: pointerRight 2s infinite;
+    }
+
+    @keyframes wave {
+      from {
+        transform: none;
+      }
+      15% {
+        transform: translate3d(-20%, 0, 0) rotate3d(0, 0, 1, -10deg);
+      }
+      30% {
+        transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 7deg);
+      }
+      45% {
+        transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -10deg);
+      }
+      60% {
+        transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 5deg);
+      }
+      75% {
+        transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -2deg);
+      }
+      to {
+        transform: none;
+      }
+    }
+
+    @keyframes pointerRight {
+      from {
+        transform: none;
+      }
+      15% {
+        transform: translate3d(20%, 0, 0) rotate3d(0, 0, 1, 10deg);
+      }
+      30% {
+        transform: translate3d(-10%, 0, 0) rotate3d(0, 0, 1, -7deg);
+      }
+      45% {
+        transform: translate3d(15%, 0, 0) rotate3d(0, 0, 1, 10deg);
+      }
+      60% {
+        transform: translate3d(-10%, 0, 0) rotate3d(0, 0, 1, -5deg);
+      }
+      75% {
+        transform: translate3d(5%, 0, 0) rotate3d(0, 0, 1, 2deg);
+      }
+      to {
+        transform: none;
+      }
+    }
+  }
+
+  &__tagline {
+    text-align: left;
+    min-width: 320px;
+
+    h2 {
+      font-weight: 300;
+    }
+
+    .animation {
+      font-size: $fs-h-desktop;
+      @include mobile {
+        font-size: 2rem;
+      }
+    }
+
+    .name {
+      font-weight: 700;
+    }
+  }
+
+  &__contact {
+    @include flex-center;
+    align-items: flex-start;
+    font-size: 1.25rem;
+    font-weight: 400;
+
+    @include mobile {
+      @include flex-column;
+    }
+
+    .touch {
+      display: flex;
+      align-items: center;
+    }
+
+    .highlight-link {
+      @include transition;
+      font-weight: 400;
+      color: inherit;
+      display: inline-block;
+      padding: 2px 3px;
+
+      box-shadow: inset 0 -3px 0 $color-paper;
+
+      @include light {
+        box-shadow: inset 0 -3px 0 $color-coal;
+      }
+
+      &:hover {
+        box-shadow: inset 0 -33px 0 0 $color-paper;
+        color: $color-black;
+
+        @include light {
+          box-shadow: inset 0 -33px 0 0 $color-coal;
+          color: $color-paper;
+        }
+      }
+    }
+  }
+}

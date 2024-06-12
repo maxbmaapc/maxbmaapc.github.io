@@ -3,9 +3,11 @@ import Motion from "../Motion/Motion";
 
 const Header = () => {
   return (
-    <Motion className="header" type="header">
-      <HeaderView />
-    </Motion>
+    <>
+      <Motion className="header" type="header">
+        <HeaderView />
+      </Motion>
+    </>
   );
 };
 

@@ -4,6 +4,7 @@ import { ReactNode } from "react";
 import { motion } from "framer-motion";
 
 import { fadeIn } from "../../utils/fadeIn";
+import { Divider } from "@chakra-ui/react";
 
 interface MotionProps {
   children: ReactNode;
@@ -22,15 +23,18 @@ const Motion: React.FC<MotionProps> = ({
   const MotionTag = motion[type];
 
   return (
-    <MotionTag
-      className={className}
-      variants={fadeIn(isMobile ? "up" : "right", 0.5)}
-      initial="hidden"
-      whileInView={"show"}
-      viewport={{ once: false, amount: viewport }}
-    >
-      {children}
-    </MotionTag>
+    <>
+      <MotionTag
+        className={className}
+        variants={fadeIn(isMobile ? "up" : "right", 0.5)}
+        initial="hidden"
+        whileInView={"show"}
+        viewport={{ once: false, amount: viewport }}
+      >
+        {children}
+      </MotionTag>
+      <Divider />
+    </>
   );
 };
 

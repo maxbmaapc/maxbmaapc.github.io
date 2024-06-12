@@ -14,10 +14,14 @@
     }
   }
 
+  &__description {
+    padding-top: 1.5rem;
+  }
+
   &__title {
     font-size: 1rem;
-    font-weight: 700;
   }
+
   p {
     margin-top: 1rem;
     margin-right: -2rem;

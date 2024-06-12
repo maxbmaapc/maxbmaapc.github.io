@@ -17,7 +17,7 @@ const ProjectView: React.FC<ProjectViewProps> = ({
         <div>
           <img src={img} alt="" />
         </div>
-        <div>
+        <div className="project__description">
           <a className="project__title" href={link}>
             {title}
           </a>

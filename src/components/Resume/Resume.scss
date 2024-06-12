@@ -1,11 +1,11 @@
 .resume {
+  @include flex-center;
+  gap: 1rem;
   font-size: 1.5rem;
   padding: 6rem 0;
 
   a {
-    @include flex-center;
-    gap: 1rem;
-
+    display: contents;
     &:hover .resume__arrow_icon {
       animation: bounce 1s infinite;
     }

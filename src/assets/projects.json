@@ -1,12 +1,67 @@
 [
   {
     "id": 1,
-    "name": "NC News App",
-    "description": "",
-    "p": "",
-    "image": "",
-    "demo": "",
-    "github": "",
-    "type": "project"
+    "name": "Countries React App",
+    "description": "Thi responsive React project is built using React Route and JSX. Available on PC/Mobile.",
+    "link": "https://cyf-mpanasetckiy-react.onrender.com/",
+    "github": "https://github.com/Mpanasetckiy/countries-react",
+    "tools": ["HTML", "CSS", "JavaScript", "React"]
+  },
+  {
+    "id": 2,
+    "name": "Job listings React App",
+    "description": "This responsive app is built using React. Available on PC/Mobile.",
+    "link": "https://cyf-mpanasetckiy-joblisting.onrender.com/",
+    "github": "https://github.com/Mpanasetckiy/job-listing-react",
+    "tools": ["HTML", "CSS", "JavaScript", "React"]
+  },
+  {
+    "id": 3,
+    "name": "Video Recommendation App",
+    "description": "Full-stack fully functional app built to enable users to share their favourite videos with others.",
+    "link": "https://fullstack-project-knnq.onrender.com/",
+    "github": "https://github.com/Mpanasetckiy/Full-Stack-Project-Assessment",
+    "tools": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "React",
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "Mongoose"
+    ]
+  },
+  {
+    "id": 4,
+    "name": "TV Show DOM Project",
+    "description": "This project is written in Vanilla JS, HTML/CSS only, fetching API from TV Maze without back-end involvement.",
+    "link": "https://cyf-mpanasetckiy-tv.netlify.app/",
+    "github": "https://github.com/Mpanasetckiy/tv-show-dom-project",
+    "tools": ["HTML", "CSS", "JavaScript"]
+  },
+  {
+    "id": 5,
+    "name": "Maya Portfolio Website",
+    "description": "This responsive website is written in HTML/CSS.",
+    "link": "https://project-maya-cv.netlify.app/",
+    "github": "https://github.com/Mpanasetckiy/HTML-CSS-Coursework-Week4",
+    "tools": ["HTML", "CSS", "JavaScript"]
+  },
+  {
+    "id": 6,
+    "name": "TODO List",
+    "description": "This is my first functional app done in 2021. It is written in JS using JQuery library and HTML/CSS.",
+    "link": "https://maksim-todo-list.netlify.app/",
+    "github": "https://github.com/Mpanasetckiy/ToDo_on_JS",
+    "tools": ["HTML", "CSS", "JavaScript", "JQuery"]
+  },
+  {
+    "id": 7,
+    "name": "Interior Website",
+    "description": "My first responsive website written in HTML/CSS via Perfect Pixel.",
+    "link": "https://maksim-interior-project.netlify.app/",
+    "github": "https://github.com/Mpanasetckiy/Interior_Project",
+    "tools": ["HTML", "CSS", "Perfect Pixel"]
   }
 ]

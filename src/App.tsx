@@ -5,6 +5,7 @@ import Resume from "./components/Resume/Resume";
 import Project from "./components/Project/Project";
 
 import "./App.scss";
+import ProjectList from "./components/ProjectsList/ProjectsList";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Skills />
       <Resume />
       <Project />
+      <ProjectList />
     </>
   );
 }

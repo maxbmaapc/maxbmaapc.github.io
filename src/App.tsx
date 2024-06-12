@@ -3,10 +3,10 @@ import Background from "./components/Backgroung/Background";
 import Skills from "./components/Skills/Skills";
 import Resume from "./components/Resume/Resume";
 import Project from "./components/Project/Project";
-
-import "./App.scss";
 import ProjectList from "./components/ProjectsList/ProjectsList";
 import Footer from "./components/Footer/Footer";
+
+import "./App.scss";
 
 function App() {
   return (

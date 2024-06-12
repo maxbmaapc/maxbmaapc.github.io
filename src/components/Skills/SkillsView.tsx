@@ -4,8 +4,6 @@ import { FaStar } from "react-icons/fa";
 
 const SkillsView = () => {
   const isMobile = useMediaQuery({ maxWidth: 480 });
-  const badgeFontSize = "10px";
-  const badgeMarginLeft = 1;
 
   return (
     <>

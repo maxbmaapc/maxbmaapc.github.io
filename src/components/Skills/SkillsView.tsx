@@ -1,4 +1,4 @@
-import { SimpleGrid, Badge, Tag } from "@chakra-ui/react";
+import { SimpleGrid, Badge } from "@chakra-ui/react";
 import { useMediaQuery } from "react-responsive";
 import { FaStar } from "react-icons/fa";
 
@@ -29,8 +29,8 @@ const SkillsView = () => {
             <li>CSS</li>
             <li>
               Sass{" "}
-              <Badge colorScheme="green" fontSize="0.7rem">
-                New
+              <Badge colorScheme="orange" fontSize="0.9rem">
+                <FaStar />
               </Badge>
             </li>
             <li>React</li>
@@ -47,8 +47,8 @@ const SkillsView = () => {
             <li>Mongoose</li>
             <li>
               Swagger{" "}
-              <Badge colorScheme="green" fontSize={badgeFontSize}>
-                New
+              <Badge colorScheme="orange" fontSize="0.9rem">
+                <FaStar />
               </Badge>
             </li>
             <li>Seeding</li>
@@ -58,18 +58,8 @@ const SkillsView = () => {
           <h2>Design</h2>
           <ul>
             <li>Bootstrap</li>
-            <li>
-              AntDesign{" "}
-              <Badge colorScheme="green" fontSize={badgeFontSize}>
-                New
-              </Badge>
-            </li>
-            <li>
-              Chakra UI{" "}
-              <Badge colorScheme="green" fontSize={badgeFontSize}>
-                New
-              </Badge>
-            </li>
+            <li>AntDesign</li>
+            <li>Chakra UI</li>
           </ul>
         </div>
         <div>
@@ -81,16 +71,7 @@ const SkillsView = () => {
             <li>Terraform</li>
             <li>Docker</li>
             <li>Firebase</li>
-            <li>
-              GCP{" "}
-              <Badge
-                colorScheme="green"
-                fontSize={badgeFontSize}
-                ml={badgeMarginLeft}
-              >
-                New
-              </Badge>
-            </li>
+            <li>GCP</li>
           </ul>
         </div>
       </SimpleGrid>

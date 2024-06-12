@@ -1,5 +1,5 @@
 import Motion from "../Motion/Motion";
-import Resume from "../Resume/Resume";
+
 import SkillsView from "./SkillsView";
 
 const Skills = () => {

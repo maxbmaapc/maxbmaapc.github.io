@@ -6,6 +6,7 @@ import Project from "./components/Project/Project";
 
 import "./App.scss";
 import ProjectList from "./components/ProjectsList/ProjectsList";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Resume />
       <Project />
       <ProjectList />
+      <Footer />
     </>
   );
 }

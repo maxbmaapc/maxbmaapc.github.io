@@ -29,7 +29,7 @@ const Motion: React.FC<MotionProps> = ({
         variants={fadeIn(isMobile ? "up" : "right", 0.5)}
         initial="hidden"
         whileInView={"show"}
-        viewport={{ once: false, amount: viewport }}
+        viewport={{ once: true, amount: viewport }}
       >
         {children}
       </MotionTag>

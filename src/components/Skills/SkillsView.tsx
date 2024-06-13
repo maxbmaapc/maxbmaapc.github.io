@@ -1,6 +1,5 @@
-import { SimpleGrid, Badge } from "@chakra-ui/react";
+import { SimpleGrid } from "@chakra-ui/react";
 import { useMediaQuery } from "react-responsive";
-import { FaStar } from "react-icons/fa";
 
 const SkillsView = () => {
   const isMobile = useMediaQuery({ maxWidth: 480 });
@@ -17,20 +16,10 @@ const SkillsView = () => {
           <h2>Front-end</h2>
           <ul>
             <li>JavaScript</li>
-            <li>
-              TypeScript{" "}
-              <Badge colorScheme="orange" fontSize="0.9rem">
-                <FaStar />
-              </Badge>
-            </li>
+            <li>TypeScript </li>
             <li>HTML</li>
             <li>CSS</li>
-            <li>
-              Sass{" "}
-              <Badge colorScheme="orange" fontSize="0.9rem">
-                <FaStar />
-              </Badge>
-            </li>
+            <li>Sass </li>
             <li>React</li>
             <li>JQuery</li>
           </ul>
@@ -43,12 +32,7 @@ const SkillsView = () => {
             <li>PostgreSQL</li>
             <li>MongoDB</li>
             <li>Mongoose</li>
-            <li>
-              Swagger{" "}
-              <Badge colorScheme="orange" fontSize="0.9rem">
-                <FaStar />
-              </Badge>
-            </li>
+            <li>Swagger </li>
             <li>Seeding</li>
           </ul>
         </div>

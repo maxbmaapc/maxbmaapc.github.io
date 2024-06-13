@@ -8,7 +8,7 @@ const FooterView = () => {
       </div>
       <div className="footer__links">
         <div>
-          <a href="mailto:maxbuzz8694@gmail.com">maxbuzz8694@gmail.com</a>
+          <a href="mailto:m.lukianenko@icloud.com">m.lukianenko@icloud.com</a>
         </div>
         <div className="footer__icons">
           <a href="https://www.linkedin.com/in/maksimlukianenko/">
@@ -17,7 +17,7 @@ const FooterView = () => {
           <a href="https://github.com/Mpanasetckiy">
             <FaGithub />
           </a>
-          <a href="https://www.facebook.com/mpanasetckiy">
+          <a href="https://www.facebook.com/m.panasetckiy">
             <FaFacebook />
           </a>
         </div>

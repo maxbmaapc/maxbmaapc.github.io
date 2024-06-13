@@ -7,11 +7,13 @@ import ProjectList from "./components/ProjectsList/ProjectsList";
 import Footer from "./components/Footer/Footer";
 
 import "./App.scss";
+import Carousel from "./components/Carousel/Carousel";
 
 function App() {
   return (
     <>
       <Header />
+      <Carousel />
       <Background />
       <Skills />
       <Resume />

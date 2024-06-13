@@ -48,8 +48,8 @@ const HeaderView = () => {
           </span>
         </span>
         <span>
-          <a href="mailto:maxbuzz8694@gmail.com" className="highlight-link">
-            maxbuzz8694@gmail.com
+          <a href="mailto:m.lukianenko@icloud.com" className="highlight-link">
+            m.lukianenko@icloud.com
           </a>
         </span>
       </div>

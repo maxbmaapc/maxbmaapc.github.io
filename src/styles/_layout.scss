@@ -49,6 +49,11 @@ section {
   text-align: left;
 }
 
+.ant-divider {
+  background-color: #fffffa;
+  opacity: 0.1;
+}
+
 a {
   @include transition;
   font-weight: 600;
@@ -96,6 +101,11 @@ button:focus-visible {
   :root {
     color: $color-coal;
     background-color: $color-paper;
+  }
+
+  .ant-divider {
+    background-color: $color-coal;
+    opacity: 0.1;
   }
 
   button {

@@ -19,6 +19,17 @@
   &__tools {
     display: flex;
     flex-wrap: wrap;
-    gap: 0.5rem;
+    gap: 5px;
+
+    .ant-tag {
+      background-color: rgba(254, 178, 178, 0.16) !important;
+      color: #feb2b2;
+      padding: 5px;
+      min-height: 1.5rem;
+
+      @include light {
+        color: #822727;
+      }
+    }
   }
 }

@@ -1,8 +1,6 @@
 import React from "react";
+import { Divider, Carousel } from "antd";
 import { useMediaQuery } from "react-responsive";
-
-import { Divider } from "@chakra-ui/react";
-import { Carousel } from "antd";
 
 const CarouselView: React.FC = () => {
   const isMobile = useMediaQuery({ maxWidth: 480 });

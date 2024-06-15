@@ -1,8 +1,16 @@
 [
   {
+    "id": 0,
+    "name": "My portfolio V1",
+    "description": "My first iteration of portfolio built last year to reflect my skills. It's a simple although responsive website using plain HTML/CSS.",
+    "link": "https://mpanasetckiy.github.io/portfolio-v1/",
+    "github": "https://github.com/Mpanasetckiy/portfolio-v1",
+    "tools": ["HTML", "CSS", "JavaScript"]
+  },
+  {
     "id": 1,
     "name": "Countries React App",
-    "description": "Thi responsive React project is built using React Route and JSX. Available on PC/Mobile.",
+    "description": "This responsive React project is built using React Route and JSX. Available on PC/Mobile.",
     "link": "https://cyf-mpanasetckiy-react.onrender.com/",
     "github": "https://github.com/Mpanasetckiy/countries-react",
     "tools": ["HTML", "CSS", "JavaScript", "React"]

@@ -4,7 +4,7 @@ import { ReactNode } from "react";
 import { motion } from "framer-motion";
 
 import { fadeIn } from "../../utils/fadeIn";
-import { Divider } from "@chakra-ui/react";
+import { Divider } from "antd";
 
 interface MotionProps {
   children: ReactNode;

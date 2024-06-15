@@ -1,4 +1,5 @@
-import { Tag } from "@chakra-ui/react";
+// import { Tag } from "@chakra-ui/react";
+import { Tag } from "antd";
 import { Project } from "../ProjectsList/ProjectsListView";
 
 interface ProjectCardProps {
@@ -14,7 +15,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
       <p>{project.description}</p>
       <div className="projectCard__tools">
         {project.tools.map((tool) => (
-          <Tag key={tool} colorScheme="red">
+          <Tag key={tool} bordered={false}>
             {tool}
           </Tag>
         ))}

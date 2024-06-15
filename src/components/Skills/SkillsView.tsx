@@ -1,4 +1,3 @@
-import { SimpleGrid } from "@chakra-ui/react";
 import { useMediaQuery } from "react-responsive";
 
 const SkillsView = () => {
@@ -7,9 +6,12 @@ const SkillsView = () => {
   return (
     <>
       <h1 className="section__title">Skills</h1>
-      <SimpleGrid
-        columns={isMobile ? 2 : 4}
-        spacing={10}
+      <div
+        style={{
+          display: "grid",
+          gridTemplateColumns: isMobile ? "repeat(2, 1fr)" : "repeat(4, 1fr)",
+          gap: "10px",
+        }}
         className="skills__container"
       >
         <div>
@@ -56,7 +58,7 @@ const SkillsView = () => {
             <li>GCP</li>
           </ul>
         </div>
-      </SimpleGrid>
+      </div>
     </>
   );
 };

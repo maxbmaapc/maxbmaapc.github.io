@@ -4,7 +4,12 @@ const BackgroundView = () => {
       <h1 className="section__title">Background</h1>
       <div className="background__description">
         <p>
-          Embarked on my IT journey in 2021, joining{" "}
+          Graduated from
+          <a href="https://www.mveu.ru/"> Eastern European College </a>in 2019
+          with a focus on Data Structures and Algorithms.
+        </p>
+        <p>
+          Embarked on my professional IT journey in 2021, joining{" "}
           <a href="https://www.dunice.net/"> Dunice </a> as an Associate
           Software Developer.
         </p>

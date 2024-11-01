@@ -1,30 +1,32 @@
-# React + TypeScript + Vite
+# Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is built with Vite and deployed using GitHub Pages.
 
-Currently, two official plugins are available:
+## Scripts
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+The following npm scripts are available to manage, build, and deploy the project:
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+- **`dev`**: Runs the development server with Vite.
+  ```bash
+  npm run dev
+  ```
+- **`build`**: Compiles TypeScript and builds the project with Vite.
+  ```bash
+  npm run build
+  ```
+- **`lint`**: Runs ESLint to check for code quality.
+  ```bash
+  npm run lint
+  ```
+- **`preview`**: Starts a preview server to test the production build.
+  ```bash
+  npm run build
+  ```
+- **`predeploy`**: Prepares the build for deployment by running the build script.
+  ```bash
+  npm run predeploy
+  ```
+- **`deploy`**: Deploys the dist folder to GitHub Pages.
+  ```bash
+  npm run deploy
+  ```

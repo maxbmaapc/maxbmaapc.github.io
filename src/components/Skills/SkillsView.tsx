@@ -43,6 +43,7 @@ const SkillsView = () => {
           <ul>
             <li>Bootstrap</li>
             <li>AntDesign</li>
+            <li>Ionic</li>
             <li>Chakra UI</li>
           </ul>
         </div>

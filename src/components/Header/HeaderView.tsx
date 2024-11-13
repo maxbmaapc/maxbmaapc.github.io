@@ -14,7 +14,7 @@ const HeaderView = () => {
       </h1>
       <div className="header__tagline">
         <h2>
-          I'm <span className="name">Max Lukianenko</span>
+          I'm <span className="name">Maksim Lukianenko</span>
         </h2>
         <TypeAnimation
           sequence={[

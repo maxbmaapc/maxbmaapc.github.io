@@ -14,7 +14,7 @@ const FooterView = () => {
           <a href="https://www.linkedin.com/in/maksimlukianenko/">
             <FaLinkedin />
           </a>
-          <a href="https://github.com/Mpanasetckiy">
+          <a href="https://github.com/maxbmaapc">
             <FaGithub />
           </a>
           <a href="https://www.facebook.com/m.panasetckiy">
